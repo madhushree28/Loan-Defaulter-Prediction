@@ -45,7 +45,7 @@ def predict():
 
 
 
-        features = np.array(float_features).reshape((1, -1))
+        features = np.array(float_features).reshape((-1, 7))
         prediction = model.predict(features)
 
         # GrAppv=input['GrAppv']
