@@ -31,13 +31,15 @@ def predict():
         float_features = [float(x) for x in request.form.values()]
         print("Len of features: {0}", len(float_features))
         print(float_features)
-        RevLineCr = float_features[0]
-        NoEmp = float_features[1]
-        CreateJob = float_features[2]
-        RetainedJob = float_features[3]
-        Term = float_features[4]
-        GrAppv = float_features[5]
-        SBA_Appv = float_features[6]
+        Term = float_features[0]
+        GrAppv = float_features[1]
+        SBA_Appv = float_features[2]
+        NoEmp = float_features[3]
+        RetainedJob = float_features[4]
+        CreateJob = float_features[5]
+        RevLineCr = float_features[6]
+        
+        
 
 
 
@@ -55,7 +57,7 @@ def predict():
         # features = np.array(float_features).reshape((1,-1))
         # prediction = model.predict(features)
         # return render_template('result.html', data=input, prediction=prediction)
-        return render_template('result.html',data=input, prediction=prediction,Term=Term,GrAppv = GrAppv, SBA_Appv = SBA_Appv,RevLineCr = RevLineCr,NoEmp = NoEmp, CreateJob = CreateJob, RetainedJob =RetainedJob)
+        return render_template('result.html',data=input, prediction=prediction,Term=Term,GrAppv = GrAppv, SBA_Appv = SBA_Appv,NoEmp = NoEmp, RetainedJob = RetainedJob, CreateJob = CreateJob, RevLineCr = RevLineCr )
         # return redirect(url_for('result'))
 
         # show the form, it wasn't submitted
