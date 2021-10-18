@@ -1,5 +1,5 @@
 .hero-section {
-    background-image: linear-gradient(rgba(21, 59, 51, 1), rgba(0, 0, 0, 0.7)), url(images/hero-image.jpg);
+    background-image: linear-gradient(rgba(21, 59, 51, 1), rgba(0, 0, 0, 0.7)), url(https://loan-approvals.herokuapp.com/images/hero-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
