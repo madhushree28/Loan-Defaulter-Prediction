@@ -48,52 +48,60 @@
             <div class="col-lg-6 col-md-6" style="border: 1px solid rgba(0,0,0,.125);background-color:white;margin-top:-20px;border-radius:16px;">
                 <form class="pt-3 pb-3" action="{{ url_for('predict')}}" method="POST">
                     
-                    <div class="form-group row ">
-                        <label for="inputRevolvingLineOfCredit " class="col-sm-2 col-lg-4 col-form-label ">Revolving Line of Credit</label>
+		    <div class="form-group row ">
+                        <label for="inputLoanTerm " class="col-sm-2 col-lg-4 col-form-label ">Loan Term</label>
                         <div class="col-sm-10 col-lg-8 ">
-                           <input type="text " id="inputRevLineCr " class="form-control " name="RevLineCr">
+                            <input type="number " id="inputLoanTerm " class="form-control " name="LoanTerm">
                         </div>
                     </div>
-					<div class="form-group row ">
+			
+		    <div class="form-group row ">
+                        <label for="inputBankLoanAmount " class="col-sm-2 col-lg-4 col-form-label ">Bank Loan Amount</label>
+                        <div class="col-sm-10 col-lg-8 ">
+                            <input type="number " id="inputBankLoanAmount " class="form-control " name="BankLoanAmt">
+                        </div>
+                    </div>
+			
+		    <div class="form-group row ">
+                        <label for="inputSBALoanAmount " class="col-sm-2 col-lg-4 col-form-label ">SBA Loan Amount</label>
+                        <div class="col-sm-10 col-lg-8 ">
+                            <input type="number " id="inputSBALoanAmount " class="form-control " name = "SBALoanAmt">
+                        </div>
+                    </div>
+			
+		    <div class="form-group row ">
                         <label for="inputNumberofemployee " class="col-sm-2 col-lg-4 col-form-label ">Number of Employees</label>
                         <div class="col-sm-10 col-lg-8 ">
                             <input type="number " id="noEmp " class="form-control " name="NumEmp">
                         </div>
                     </div>
-					
-					<div class="form-group row ">
-                        <label for="inputNewEmployements " class="col-sm-2 col-lg-4 col-form-label ">New Employements</label>
-                        <div class="col-sm-10 col-lg-8 ">
-                            <input type="number " id="inputNewemp " class="form-control " name="NewEmployment">
-                        </div>
-                    </div>
-					
-					<div class="form-group row ">
+			
+                    
+			
+		     <div class="form-group row ">
                         <label for="inputRetainedEmployements " class="col-sm-2 col-lg-4 col-form-label ">Retained Employements</label>
                         <div class="col-sm-10 col-lg-8 ">
                             <input type="number " id="inputoldemp " class="form-control " name="RetainedEmployment">
                         </div>
                     </div>
 					
+		    <div class="form-group row ">
+                        <label for="inputNewEmployements " class="col-sm-2 col-lg-4 col-form-label ">New Employements</label>
+                        <div class="col-sm-10 col-lg-8 ">
+                            <input type="number " id="inputNewemp " class="form-control " name="NewEmployment">
+                        </div>
+                    </div>
+					
+		   <div class="form-group row ">
+                        <label for="inputRevolvingLineOfCredit " class="col-sm-2 col-lg-4 col-form-label ">Revolving Line of Credit</label>
+                        <div class="col-sm-10 col-lg-8 ">
+                           <input type="text " id="inputRevLineCr " class="form-control " name="RevLineCr">
+                        </div>
+                    </div>
+					
                     
-                    <div class="form-group row ">
-                        <label for="inputLoanTerm " class="col-sm-2 col-lg-4 col-form-label ">Loan Term</label>
-                        <div class="col-sm-10 col-lg-8 ">
-                            <input type="number " id="inputLoanTerm " class="form-control " name="LoanTerm">
-                        </div>
-                    </div>
-                    <div class="form-group row ">
-                        <label for="inputBankLoanAmount " class="col-sm-2 col-lg-4 col-form-label ">Bank Loan Amount</label>
-                        <div class="col-sm-10 col-lg-8 ">
-                            <input type="number " id="inputBankLoanAmount " class="form-control " name="BankLoanAmt">
-                        </div>
-                    </div>
-                    <div class="form-group row ">
-                        <label for="inputSBALoanAmount " class="col-sm-2 col-lg-4 col-form-label ">SBA Loan Amount</label>
-                        <div class="col-sm-10 col-lg-8 ">
-                            <input type="number " id="inputSBALoanAmount " class="form-control " name = "SBALoanAmt">
-                        </div>
-                    </div>
+                    
+                    
                     <div class="form-group row ">
                         <div class="text-center">
 							<!--<input type="submit" value="predict" class="btn btn-primary" placeholder="Loan Prediction" />-->
