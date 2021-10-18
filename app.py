@@ -7,7 +7,6 @@
 from flask import Flask, render_template, request
 import numpy as np
 import pandas as pd
-import seaborn as sb
 import pickle
 
 app = Flask(__name__)
